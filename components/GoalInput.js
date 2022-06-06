@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, TextInput, View, StyleSheet, Modal } from "react-native";
+import { Button, TextInput, View, StyleSheet, Modal, Image } from "react-native";
 
 function GoalInput (props) {
 
@@ -17,6 +17,10 @@ function GoalInput (props) {
     return (
         <Modal visible={props.showModal} animationType="slide">
             <View style={styles.inputContainer}>
+                <Image 
+                    source={require('../assets/images/goal.png')}
+                    style={styles.image}
+                />
                 <TextInput 
                     placeholder='Insira seu objetivo aqui' 
                     style={styles.textInput} 
@@ -27,7 +31,7 @@ function GoalInput (props) {
                     <View style={styles.button}>
                         <Button 
                             title='Add goal'
-                            color='#066163'
+                            color='#CDBE78'
                             style={styles.addGoalBtn}
                             onPress={addGoalHandler}
                         />
@@ -36,6 +40,7 @@ function GoalInput (props) {
                         <Button
                             title="Cancel" 
                             color="#AAAAAA"
+                            onPress={props.onCancel}
                         />
                     </View>
                 </View>
@@ -52,9 +57,9 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 20
     },
     textInput: {
+        backgroundColor: '#dddddd' ,
         borderWidth: 1,
         borderColor: '#F2F2F2',
         borderRadius: 10,
@@ -63,6 +68,11 @@ const styles = StyleSheet.create({
         marginBottom: 8,
         padding: 10,
         width: '80%'
+    },
+    image: {
+        width: 100,
+        height: 100,
+        margin: 20
     },
     buttonsContainer: {
         flexDirection: 'row-reverse',
