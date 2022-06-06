@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
+
 import GoalInput from './components/GoalInput';
 import GoalItem from './components/GoalItem';
 
@@ -20,13 +21,13 @@ export default function App() {
 
     return (
         <View style={styles.appContainer}>
-            <GoalInput />
+            <GoalInput onChangeText={goalInputHandle} onPress={addGoalHandler}/>
             <View style={styles.listContainer}>
                 <FlatList 
                     alwaysBounceVertical={false}
                     data={courseGoals}
                     renderItem={(itemData) => {
-                        return <GoalItem />
+                        return <GoalItem text={itemData.item.text} />
                     }}
                     keyExtractor={(item, index) => {
                         return item.id;
