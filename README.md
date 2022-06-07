@@ -16,6 +16,7 @@ O aplicativo possibilita o usuário a adicionar um novo objeto, deletar um objet
 
 ![ReactNative](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ### 🔨 Como inicializar?
 Realize o clone deste repositório na pasta de sua preferência em seu terminal
@@ -36,3 +37,16 @@ Para simular o dispositivo iOS, inicie o simulador do xCode no terminal do expo
 Para simular o dispositivo Android, inicie o simulador do Android Studio no terminal do expo
 
 `a`
+
+### 🧗🏻‍♀️ Desafio
+
+Feito em aula
+- [x] Criação da main page - Lista de goals
+- [x] Criação do modal para adição do goal
+- [x] Desenvolvimento da exclusão do goal criado
+- [x] Renderização da lista de goals através da FlatList
+
+Extra
+- [ ] Splash screen
+- [ ] Página de boas vindas
+- [ ] Animações com Lottie
