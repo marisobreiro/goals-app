@@ -56,14 +56,14 @@ const styles = StyleSheet.create({
         backgroundColor: '#383838',
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center'
     },
     textInput: {
         backgroundColor: '#dddddd' ,
         borderWidth: 1,
         borderColor: '#F2F2F2',
         borderRadius: 10,
-        color: '#F2F2F2',
+        color: '#383838',
         height: 40,
         marginBottom: 8,
         padding: 10,
